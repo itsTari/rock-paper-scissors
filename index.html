@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  
+  <!-- The House Picked
+
+  You Win
+  You Lose
+
+  Play Again -->
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <div class="banner">
+      <div class="text">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <div class="score">
+        <h3>Score</h3>
+        <h2 class="score-num">0</h2>
+      </div>
+    </div>
+    <div class="display">
+      <img src="images/bg-triangle.svg" alt=""  style="max-width: 250px;" >
+      <div class="flex">
+        <div class="flex-pic">
+          <img src="images/icon-paper.svg" id="pap" alt="paper image" class="images blue">
+          <img src="images/icon-scissors.svg" id="sci" alt=" image" class="images yellow">
+        </div>
+        <div class="column"><img src="images/icon-rock.svg" id="roc" alt="rock image" class="images red"></div>
+      </div>
+        
+    </div>
+    <!-- start game -->
+    <div class="start-game">
+      <div class="player">
+        <h3>You Picked</h3>
+        <h3>Computer Picked</h3>
+      </div>
+      <div class="player-container">
+        <div class="player-pick">
+          <img src="images/icon-rock.svg"id="rock_player" class="players">
+          <img src="images/icon-paper.svg" id="paper_player" class="players">
+          <img src="images/icon-scissors.svg" id="scissors_player" class="players">
+        </div>
+        <div class="report">
+          <p class="report-text"></p>
+          <button class="play-again">play again</button>
+        </div>
+        <div class="computer-pick">
+          <img src="images/icon-rock.svg" class="computer" id="rock">
+          <img src="images/icon-paper.svg" class="computer" id="paper">
+          <img src="images/icon-scissors.svg" class="computer" id="scissors">
+        </div>
+        <div class="tiny-circle">
+          <div class="dark-circle"></div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </section>
+  <!-- rule banner -->
+  <div class="rules-banner">
+    <div class="rules">
+      <div class="flex-rule">
+        <p class="rule">Rules</p>
+        <img src="images/icon-close.svg" alt="" class="close">
+      </div>
+      
+      <img src="images/image-rules.svg" alt="rules" style="max-width: 250px;">
+    </div>
+  </div>
+  <div class="button"><button class="rule-btn">Rule</button></div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>   -->
+  <script src="main.js"></script>
+</body>
+</html>
