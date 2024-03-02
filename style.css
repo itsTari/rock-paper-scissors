@@ -141,46 +141,29 @@
     text-transform: uppercase;
   }
 
-  /* .fadeOut{
-    display: none;
-    
-  }
-  .fadeIn{
-    display: block;
-    
-  }  */
-
   #rock, #paper, #scissors, #rock_player, #scissors_player, #paper_player{
     display:none;
-  }
-  #rock, #rock_player {
     background-color: rgb(247, 230, 230);
     padding: 20px;
     border-radius: 50%;
+  }
+  #rock, #rock_player {
     border: 12px solid hsl(349, 71%, 52%);
     box-shadow: 0px 0px 10px hsl(349, 70%, 56%);
   }
   #paper, #paper_player{
-    background-color: rgb(247, 230, 230);
-    padding: 20px;
-    border-radius: 50%;
     border: 12px solid hsl(230, 89%, 62%);
     box-shadow: 0px 0px 10px hsl(230, 89%, 65%);
   }
   #scissors, #scissors_player{
-    background-color: rgb(247, 230, 230);
-    padding: 20px;
-    border-radius: 50%;
     border: 12px solid hsl(39, 89%, 49%);
     box-shadow: 0px 0px 10px hsl(40, 84%, 53%);
   }
-
   .start-game{
     width: 60%;
     display: none;
     flex-direction: column;
     transition: opacity 0.5s ease 0.4s;
-    /* display: none; */
   }
   .player, .player-container{
     display: flex;
@@ -199,7 +182,6 @@
     align-items: center;
     justify-content: center;
     transition: 0.5s ease;
-    /* z-index:10; */
   }
   .computer-pick{
     background-color:hsl(215, 47%, 19%);
@@ -211,7 +193,6 @@
     justify-content: center;
     transition: .5s;
     animation: overlay 0.9s ease;
-    /* z-index:10; */
   }
   @keyframes overlay {
     0%{opacity:0;}
@@ -226,8 +207,6 @@
     align-items: center;
     gap:5px;
     animation: overlay 2s ease;
-    /* display: none; */
-    
   }
   .report-text{
     color: white;
@@ -250,28 +229,6 @@
     color: white;
   }
   
-  .tiny-circle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:200px;
-    height: 200px;
-    background-color:rgba(28, 30, 80, 0.842);
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px rgba(56, 59, 146, 0.842);
-    display: none;
-    /* z-index: 10; */
-  }
-  .dark-circle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 140px;
-    height: 140px;
-    background-color:rgba(29, 31, 83, 0.842) ;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px rgba(48, 51, 110, 0.842) ;
-  }
   .attribution { font-size: 11px; text-align: center; }
   .attribution a { color: hsl(228, 45%, 44%); }
 
